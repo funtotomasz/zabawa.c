@@ -2,10 +2,10 @@
 
 # Kompilator C
 CC = gcc
-# Flagi kompilatora (włączamy wszystkie ostrzeżenia)
-CFLAGS = -Wall -Wextra
-# Flagi linkera (dołączamy bibliotekę ncurses)
-LDFLAGS = -lncurses
+# Flagi kompilatora (włączamy wszystkie ostrzeżenia i obsługę Unicode)
+CFLAGS = -Wall -Wextra -D_XOPEN_SOURCE_EXTENDED
+# Flagi linkera (dołączamy szerokoznakową bibliotekę ncursesw)
+LDFLAGS = -lncursesw
 
 # Nazwa pliku wykonywalnego
 TARGET = gra
